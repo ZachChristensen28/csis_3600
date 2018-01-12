@@ -3,3 +3,15 @@
   max-width: 1170px;
   width: 100%;
 }
+
+.homework {
+  display: grid;
+
+  p {
+    margin-top: 0;
+  }
+
+  @include above-tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+}
