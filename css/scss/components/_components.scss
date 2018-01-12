@@ -1,1 +1,13 @@
-//css
+.gray-container {
+  background-color: #f2f2f2;
+  border: 1px solid darken(#f2f2f2, 15%);
+  border-radius: 4px;
+  padding: 15px 4%;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.large-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
