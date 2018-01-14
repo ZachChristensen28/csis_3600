@@ -1,17 +1,31 @@
 .site-container {
   margin: auto;
   max-width: 1170px;
-  width: 100%;
+  width: 98%;
+  margin-bottom: 50px;
 }
 
 .homework {
   display: grid;
+  margin: auto;
+  width: 90%;
 
   p {
     margin-top: 0;
   }
 
   @include above-tablet {
+    grid-template-columns: 1fr 1fr;
+
+    h3 {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.header-grid {
+  @include above-tablet {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }

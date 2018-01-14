@@ -1,13 +1,85 @@
 .gray-container {
   background-color: #f2f2f2;
   border: 1px solid darken(#f2f2f2, 15%);
+  //background-color: #F1F8FF;
+  //border: 1px solid #C9E2FE;
   border-radius: 4px;
-  padding: 15px 4%;
   margin-top: 20px;
   width: 100%;
 }
 
 .large-container {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 50px;
+}
+
+.title-container {
+  background-color: #F6F8FA;
+  border-bottom: 1px solid #DDDDDD;
+  padding: 5px 10px;
+
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.homework-container {
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.main-heading {
+  margin: auto auto 50px;
+  width: 90%;
+
+  @include above-tablet {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.skills {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 'html css js' '. gulp .' 'sass npm node';
+  margin: auto;
+  width: 90%;
+
+  #html {
+    grid-area: html;
+  }
+
+  #css {
+    grid-area: css;
+  }
+
+  #js {
+    grid-area: js;
+  }
+
+  #sass {
+    grid-area: sass;
+  }
+
+  #gulp {
+    grid-area: gulp;
+  }
+
+  #npm {
+    grid-area: npm;
+  }
+
+  #node {
+    grid-area: node;
+  }
+
+  @include above-tablet {
+    justify-items: center;
+    margin: 0;
+  }
 }
