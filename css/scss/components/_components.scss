@@ -83,3 +83,31 @@
     margin: 0;
   }
 }
+
+nav {
+  ul {
+    display: block;
+  }
+
+  li {
+    display: inline-block;
+    max-width: 100px;
+    text-align: center;
+
+    &:hover:not(.active) {
+      background: darken(#f2f2f2, 5%);
+    }
+
+    a {
+      color: inherit;
+      font-family: inherit;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+  }
+
+  .active {
+    background-color: #F1F8FF !important;
+    border: 1px solid #C9E2FE !important;
+  }
+}
