@@ -1,1 +1,9 @@
-//template
+.justify-text {
+  text-align: justify !important;
+}
+
+@include above-tablet {
+  .no-margin-bottom {
+    margin-bottom: 0 !important;
+  }
+}

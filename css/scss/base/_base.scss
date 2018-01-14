@@ -35,6 +35,15 @@ code {
     color: #00cc00;
     content: '$ ';
   }
+
+  &.windows-code {
+    line-height: 3em;
+
+    &::before {
+      color: $white;
+      content: 'C:\\ ';
+    }
+  }
 }
 
 li,
@@ -43,6 +52,8 @@ ul {
   padding: 0;
 }
 
-li {
-  list-style: none;
+ul {
+  li {
+    list-style: none;
+  }
 }
