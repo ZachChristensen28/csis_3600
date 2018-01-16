@@ -143,6 +143,10 @@ nav {
     text-decoration: none;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   @include above-tablet {
     -webkit-box-align: center;
     -ms-flex-align: center;
