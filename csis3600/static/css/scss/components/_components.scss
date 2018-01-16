@@ -135,7 +135,7 @@ nav {
   padding: 20px;
 
   a {
-    color: #C9E2FE;
+    color: #336699;
     font-size: 1.5em;
     font-family: $heading-font, sans-serif;
     text-align: center;
@@ -147,5 +147,15 @@ nav {
     -ms-flex-align: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+
+    a {
+      margin-top: 15px;
+      -webkit-transition-duration: .6s;
+              transition-duration: .6s;
+
+      &:hover {
+        color: lighten(#336699, 10%);
+      }
+    }
   }
 }
