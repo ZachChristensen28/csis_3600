@@ -127,3 +127,25 @@ nav {
     }
   }
 }
+
+.error-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 20px;
+
+  a {
+    color: #C9E2FE;
+    font-size: 1.5em;
+    font-family: $heading-font, sans-serif;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  @include above-tablet {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
