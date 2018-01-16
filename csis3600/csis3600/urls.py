@@ -24,5 +24,5 @@ urlpatterns = [
     path('weeklywork/', include('myWebsite.urls', namespace='weeklywork')),
 ]
 
-handler404 = 'views.handler404'
-handler500 = 'views.handler500'
+handler404 = 'csis3600.views.handler404'
+handler500 = 'csis3600.views.handler500'
