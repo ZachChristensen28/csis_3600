@@ -90,12 +90,18 @@ nav {
   }
 
   li {
+    cursor: pointer;
     display: inline-block;
     max-width: 100px;
     text-align: center;
 
     &:hover:not(.active) {
       background: darken(#f2f2f2, 5%);
+    }
+
+    &:active:not(.active) {
+      background-color: #F1F8FF;
+      border: 1px solid #C9E2FE;
     }
 
     a {

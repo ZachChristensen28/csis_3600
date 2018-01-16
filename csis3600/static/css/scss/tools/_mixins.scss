@@ -1,7 +1,7 @@
 // == Fonts
 @font-face {
   font-family: FiraCode;
-  src: url('/fonts/FiraCode-Regular.ttf');
+  src: url('#{$font-path}/FiraCode-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
