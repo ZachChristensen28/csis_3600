@@ -13,3 +13,6 @@ urlpatterns = [
     path('week-7/', views.Week7.as_view(), name='week7'),
     path('week-8/', views.Week8.as_view(), name='week8'),
 ]
+
+handler404 = 'csis3600.views.handler404'
+handler500 = 'csis3600.views.handler500'

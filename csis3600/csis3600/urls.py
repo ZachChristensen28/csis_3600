@@ -23,6 +23,3 @@ urlpatterns = [
     path('', workViews.Week1.as_view(), name='home'),
     path('weeklywork/', include('myWebsite.urls', namespace='weeklywork')),
 ]
-
-handler404 = 'views.handler404'
-handler500 = 'views.handler500'
