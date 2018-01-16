@@ -138,6 +138,7 @@ nav {
     color: #336699;
     font-size: 1.5em;
     font-family: $heading-font, sans-serif;
+    margin-top: 15px;
     text-align: center;
     text-decoration: none;
   }
@@ -149,12 +150,12 @@ nav {
     grid-template-columns: 1fr 1fr;
 
     a {
-      margin-top: 15px;
+      margin-top: 0;
       -webkit-transition-duration: .6s;
-              transition-duration: .6s;
+      transition-duration: .6s;
 
       &:hover {
-        color: lighten(#336699, 10%);
+        color: lighten(#336699, 20%);
       }
     }
   }
