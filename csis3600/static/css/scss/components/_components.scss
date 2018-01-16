@@ -154,15 +154,11 @@ nav {
       margin-top: 0;
 
       &:hover {
-        -webkit-transition-duration: .6s;
-        transition-duration: .5s;
         color: #336699;
       }
 
       &:active {
         padding-top: 5px;
-        -webkit-transition-duration: 0;
-        transition-duration: 0;
       }
     }
   }
