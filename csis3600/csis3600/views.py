@@ -1,5 +1,8 @@
-from django.views.defaults import page_not_found
+from django.shortcuts import render_to_response
+from django.template import RequestContext
 
 
-def notFound(request, template_name='404.html'):
-    return page_not_found(request, template_name=template_name)
+def handler404(request, exception, template_name='404.html'):
+    response = render_to_response('404.html', {}, context_instance=RequestContext(request))
+    response.status_code = 404
+    return response

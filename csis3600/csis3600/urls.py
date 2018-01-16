@@ -24,4 +24,4 @@ urlpatterns = [
     path('weeklywork/', include('myWebsite.urls', namespace='weeklywork')),
 ]
 
-handler404 = views.notFound
+handler404 = 'views.handler404'
