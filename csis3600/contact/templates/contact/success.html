@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+  <title>Thank You | CSIS 3600 | Spring 2018</title>
+{% endblock %}
+{% block body %}
+<div class="homework-container">
+  <div class="title-container">
+    <h2><i class="fal fa-book fa-xs"></i> You have contacted me..</h2>
+  </div>
+    <div class="error-container">
+      <h2>Thank You! I probably won't get back to you. <i class="fal fa-thumbs-up"></i></h2>
+      <a href="{% url 'home' %}">Back To Home</a>
+    </div>
+</div>
+{% endblock %}

@@ -23,10 +23,10 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '7lyqu-r*q&@4!n^#cr=p$ffddi^9wa!j+70kl!_wztua21tp!1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['zachristensen.com', '198.199.119.150',]
-
+#DEBUG = False
+DEBUG = True
+ALLOWED_HOSTS = ['zachristensen.com', '198.199.119.150', ]
+# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myWebsite',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +75,20 @@ WSGI_APPLICATION = 'csis3600.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'csis3600',
+        'USER': 'zach',
+        'PASSWORD': 'Zchris123!',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -128,4 +139,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]

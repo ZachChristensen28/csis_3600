@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from myWebsite import views as workViews
-from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', workViews.Week1.as_view(), name='home'),
     path('weeklywork/', include('myWebsite.urls', namespace='weeklywork')),
+    path('contact/', include('contact.urls', namespace='contact')),
 ]

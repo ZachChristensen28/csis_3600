@@ -51,6 +51,7 @@
         <li class="gray-container {% if request.path == '/weeklywork/week-6/' %}active{% endif %}"><a href="{% url 'weeklywork:week6' %}">Week 6</a></li>
         <li class="gray-container {% if request.path == '/weeklywork/week-7/' %}active{% endif %}"><a href="{% url 'weeklywork:week7' %}">Week 7</a></li>
         <li class="gray-container {% if request.path == '/weeklywork/week-8/' %}active{% endif %}"><a href="{% url 'weeklywork:week8' %}">Week 8</a></li>
+        <li class="gray-container {% if request.path == '/contact/' %}active{% endif %}"><a href="{% url 'contact:contactForm' %}">Contact</a></li>
       </ul>
     </nav>
     {% block body %}{% endblock %}

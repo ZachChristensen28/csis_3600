@@ -167,3 +167,30 @@ nav {
     }
   }
 }
+
+.form-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+
+  button {
+    background-color: #4CAF50;
+    border: 1px solid darken(#4CAF50, 10%);
+    border-radius: 4px;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    grid-column: 1 / -1;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 4px 2px;
+
+    &:hover {
+      background-color: darken(#4CAF50, 10%);
+    }
+  }
+}

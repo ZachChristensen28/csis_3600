@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}
+  <title>Contact Me | CSIS 3600 | Spring 2018</title>
+{% endblock %}
+{% block body %}
+<div class="homework-container">
+  <div class="title-container">
+    <h2><i class="fal fa-book fa-xs"></i> Contact Me</h2>
+  </div>
+  <div class="homework">
+    <form class="form-grid" action="{% url 'contact:contactForm' %}" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <button type="submit">Send It</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
