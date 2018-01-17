@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myWebsite',
     'contact',
+    'secret',
 ]
 
 MIDDLEWARE = [

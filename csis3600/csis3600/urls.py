@@ -22,4 +22,5 @@ urlpatterns = [
     path('', workViews.Week1.as_view(), name='home'),
     path('weeklywork/', include('myWebsite.urls', namespace='weeklywork')),
     path('contact/', include('contact.urls', namespace='contact')),
+    path('secret/', include('secret.urls', namespace='secret')),
 ]
