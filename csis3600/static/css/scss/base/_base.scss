@@ -64,9 +64,12 @@ ul {
 }
 
 form {
-  input {
+  input,
+  textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
     padding: 12px 20px;
     margin: 8px 0;
   }
