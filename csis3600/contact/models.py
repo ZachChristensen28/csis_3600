@@ -11,7 +11,7 @@ class Contact(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return self.first_name + ' ' + self.comments
+        return self.first_name + ' - ' + '"' + self.comments + '"'
 
     def get_absolute_url(self):
         return reverse('contact:success')
