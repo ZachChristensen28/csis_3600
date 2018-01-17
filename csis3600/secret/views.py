@@ -4,4 +4,4 @@ from django.views.generic import TemplateView
 
 
 class FirstClueView(TemplateView):
-    template_name = 'clue1.html'
+    template_name = 'secret/clue1.html'
