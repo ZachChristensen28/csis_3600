@@ -7,3 +7,9 @@
     margin-bottom: 0 !important;
   }
 }
+
+@include above-tablet {
+  .add-margin {
+    margin-left: 10px;
+  }
+}
