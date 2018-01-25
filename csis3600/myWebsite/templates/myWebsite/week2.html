@@ -1,14 +1,114 @@
-{% extends "base.html" %}
-{% block title %}
-  <title>Week 2 | CSIS 3600 | Spring 2018</title>
-{% endblock %}
-{% block body %}
+{% extends "base.html" %} {% block title %}
+<title>Week 2 | CSIS 3600 | Spring 2018</title>
+{% endblock %} {% block body %}
 <div class="homework-container">
   <div class="title-container">
     <h2><i class="fal fa-book fa-xs"></i> Week 2</h2>
   </div>
   <div class="homework">
-
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> Textbook problems Chapter 2</h3>
+    <dl>
+      <dt>1</dt>
+      <dd>There is no limit to the number of processes that can be in the ready and blocked states. At most, n processes may be in the run state, since a process in the run state must be allocated to a CPU, and there are only n CPUs.</dd>
+      <dt>2</dt>
+      <dd>There can be zero processes in any of the three states. It is possible for all the processes to be blocked while waiting on I/O operations, leaving no processes in the ready and running states. All processes can be either in the ready or run state,
+        leaving no processes blocked.</dd>
+      <dt>3</dt>
+      <dd>It increases CPU utilization. While one process is blocked, waiting for I/O to complete, the CPU may execute another process.</dd>
+      <dt>6</dt>
+      <dd>
+        <ol type="a">
+          <li>Possible, when a process’s time quantum expires</li>
+          <li>Possible, when a process issues an I/O request</li>
+          <li>Not possible, although process could first go to the blocked state, then the swapped-blocked</li>
+          <li>Not possible, although process could first go to the ready state, then to the run state</li>
+          <li>Possible, when a process terminates itself</li>
+        </ol>
+      </dd>
+      <dt>8</dt>
+      <dd>Possible, when a process terminates itself</dd>
+      <dt>28d</dt>
+      <dd></dd>
+      <dt>28e</dt>
+      <dd></dd>
+    </dl>
+  </div>
+  <div class="homework">
+    <h3><i class="fal fa-pencil"> List the Linux commands we covered today and what they do</i></h3>
+    <ul>
+      <li>
+        <code>chown</code>
+        <p>Change ownership of a file</p>
+      </li>
+      <li>
+        <code>find</code>
+        <p>Searches the directroy tree</p>
+      </li>
+      <li>
+        <code>cp</code>
+        <p>Copies Files</p>
+      </li>
+      <li>
+        <code>vmstat</code>
+        <p>Provides a snapshot of everything in a system</p>
+      </li>
+      <li>
+        <code>df</code>
+        <p>Reports filesystem disk space usage</p>
+      </li>
+      <li>
+        <code>grep</code>
+        <p>Used for searching one or more files</p>
+      </li>
+      <li>
+        <code>cpio</code>
+        <p>Back up empty directories</p>
+      </li>
+      <li>
+        <code>alias</code>
+        <p>Allows substitution of a small or more familiar name in place of a long string</p>
+      </li>
+      <li>
+        <code>awk</code>
+        <p>Searches for patterns in a file and processes them</p>
+      </li>
+      <li>
+        <code>wc</code>
+        <p>Counts words</p>
+      </li>
+      <li>
+        <code>diff</code>
+        <p>Shows the differences between files</p>
+      </li>
+      <li>
+        <code>less</code>
+        <p>Lest you scroll through files</p>
+      </li>
+      <li>
+        <code>set</code>
+        <p>Show all environment variables</p>
+      </li>
+      <li>
+        <code>export</code>
+        <p>Sets the value of a variable so it is visible to all sub-process that belong to the current shell</p>
+      </li>
+    </ul>
+  </div>
+  <div class="homework">
+    <h3><i class="fal fa-pencil"> Add to the PATH variable so you can launch firefox inside the unix shell</i></h3>
+    <code>export PATH=$PATH:/path/to/firefox</code>
+  </div>
+  <div class="homework">
+    <h3><i class="fal fa-pencil"> Add chrome to your PATH variable and test it.</i></h3>
+    <code>export PATH=$PATH:/path/to/chrome</code>
+  </div>
+  <div class="homework">
+    <h3><i class="fal fa-pencil"> Add an alias for Notepadd++. Call it notepad++</i></h3>
+    <code>alias notepad++='/path/to/notepadd++'</code>
+  </div>
+  <div class="homework">
+    <h3><i class="fal fa-pencil"> Add the java jdk to your PATH variable.  Add the variable CLASSPATH.  Then compile and run a simple java program of your choice from the unix command line.</i></h3>
+    <code>Homework goes here</code>
   </div>
 </div>
 {% endblock %}
