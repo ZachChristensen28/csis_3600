@@ -33,7 +33,6 @@
   }
 
   @include above-tablet {
-    grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
 
     h3 {
@@ -46,5 +45,9 @@
   @include above-tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    .spanAll {
+      grid-column: 1 / -1;
+    }
   }
 }
