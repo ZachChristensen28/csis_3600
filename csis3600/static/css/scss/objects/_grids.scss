@@ -38,6 +38,10 @@
     h3 {
       grid-column: 1 / -1;
     }
+
+    .spanAll {
+      grid-column: 1 / -1;
+    }
   }
 }
 
@@ -45,9 +49,5 @@
   @include above-tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    .spanAll {
-      grid-column: 1 / -1;
-    }
   }
 }
