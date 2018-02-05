@@ -1,14 +1,84 @@
 {% extends "base.html" %} {% block title %}
 <title>Week 3 | CSIS 3600 | Spring 2018</title>
-{% endblock %} {% block body %}
+{% endblock %} {% block body %} {% load static %}
 <div class="homework-container">
   <div class="title-container">
     <h2><i class="fal fa-book fa-xs"></i> Week 3</h2>
   </div>
   <div class="homework">
-    <h2>This homework will be posted February 9th.</h2>
-    <p>Thanks! see /secret if you get bored</p>
-
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 1. Describe the fate of the victim in deadlock resolution. Describe the actions necessary to complete the victim's tasks.</h3>
+    <dl>
+      <dt>Dead Lock</dt>
+      <dd>A problem occuring when the resources needed by a job 'A' to finish are held by job 'B', which in turn is waiting for resources held by job 'A'</dd>
+      <dt>Necessary steps to complete the victm's tasks</dt>
+      <dd>
+        <ol>
+          <li>Detect deadlocks by creating a process-resource diagraph and look for cycles</li>
+          <li>If a cycle is detected then we impose a policy for dealing with id</li>
+          <li>A policy for dealing with deadlocks is called a recovery algorithm
+            <ul>
+              <li>Pick the lowest priority process and prempt it</li>
+              <li>allow resources to go to needed processes</li>
+            </ul>
+          </li>
+        </ol>
+      </dd>
+    </dl>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 2. Precisely define the following terms:</h3>
+    <dl>
+      <dt>Circular wait</dt>
+      <dd>A set of 2 or more process are each waiting for a resource held by the other</dd>
+      <dt>Deadlock</dt>
+      <dd>A problem occuring when the resources needed by a job 'A' to finish are held by job 'B', which in turn is waiting for resources held by job 'A'</dd>
+      <dt>Detection</dt>
+      <dd>Under the deadlock detection, deadlocks are allowed to occur. Then the state of the system is examined to detect that a deadlock has occurred and subsequently it is corrected. An algorithm is employed that tracks resource allocation and process
+        states, it rolls back and restarts one or more of the processes in order to remove the detected deadlock.</dd>
+      <dt>Directed Graphs</dt>
+      <dd>In mathematics, and more specifically in graph theory, a directed graph is a graph that is a set of vertices connected by edges, where the edges have a direction associated with them.</dd>
+      <dt>Mutual Exclusion</dt>
+      <dd>When only one process is allowed to have access to a resource</dd>
+      <dt>No Preemption</dt>
+      <dd>If a process that is holding some resources requests another resource that cannot be immediately allocated to it, then all resources currently being held are released implicitly. Then the preempted resources are added to the list of resources for
+        which the process is waiting.</dd>
+      <dt>Process Synchronization</dt>
+      <dd>Process synchronization problem arises in the case of Cooperative process also because resources are shared in Cooperative processes.</dd>
+      <dt>Resource Holding</dt>
+      <dd>A process does not relinauish the resources it holds until execution is completed, even if it isn't using the resource because it's waiting for other resources</dd>
+    </dl>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 3. How does the OS detect deadlock?</h3>
+    <p>Under the deadlock detection, deadlocks are allowed to occur. Then the state of the system is examined to detect that a deadlock has occurred and subsequently it is corrected. An algorithm is employed that tracks resource allocation and process states,
+      it rolls back and restarts one or more of the processes in order to remove the detected deadlock.</p>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 4. What do the following special characters mean in Bash:</h3>
+    <dl>
+      <dt>~</dt>
+      <dd>home</dd>
+      <dt>#</dt>
+      <dd>comment</dd>
+      <dt>$</dt>
+      <dd>variable</dd>
+      <dt>*</dt>
+      <dd>all</dd>
+      <dt>|</dt>
+      <dd>pipe</dd>
+      <dt>;</dt>
+      <dd>end of command</dd>
+      <dt>></dt>
+      <dd>redirect output</dd>
+      <dt><</dt>
+      <dd>redirect input</dd>
+      <dt>>></dt>
+      <dd>append output</dd>
+      <dt>'</dt>
+      <dd>strong quote</dd>
+      <dt>"</dt>
+      <dd>weak quote</dd>
+    </dl>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 5. How would you set your history file to save up to 100,000 lines?</h3>
+    <p>edit your .bashrc file to save 100,000 lines</p>
+    <img src="{% static img/week3/history.png %}" alt="History Size" width="300">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 6. Draw a picture of the Cygwin file system one level deep.</h3>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 7. Give the output of each of these files:</h3>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 8. Print a list of the environment variables</h3>
   </div>
 </div>
 {% endblock %}
