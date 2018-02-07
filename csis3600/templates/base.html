@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  {% block title %}{% endblock %}
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> {% block title %}{% endblock %}
 
   <!-- BOOTSTRAP SUCKS -->
   <!-- DJANGO RULES -->
@@ -45,7 +45,7 @@
     </header>
     <nav role="navigation">
       <ul>
-        <li class="gray-container {% if request.path == '/weeklywork/week-1/' or request.path == '/' %}active{% endif %}"><a href="{% url 'weeklywork:week1' %}">Week 1</a></li>
+        <li class="gray-container {% if request.path == '/weeklywork/week-1/' %}active{% endif %}"><a href="{% url 'weeklywork:week1' %}">Week 1</a></li>
         <li class="gray-container {% if request.path == '/weeklywork/week-2/' %}active{% endif %}"><a href="{% url 'weeklywork:week2' %}">Week 2</a></li>
         <li class="gray-container {% if request.path == '/weeklywork/week-3/' %}active{% endif %}"><a href="{% url 'weeklywork:week3' %}">Week 3</a></li>
         <li class="gray-container {% if request.path == '/weeklywork/week-4/' %}active{% endif %}"><a href="{% url 'weeklywork:week4' %}">Week 4</a></li>
