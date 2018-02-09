@@ -49,7 +49,7 @@
   justify-items: center;
   display: grid;
   grid-gap: 10px;
-  grid-template-areas: 'html css js' '. gulp .' 'sass npm node';
+  grid-template-areas: 'html css js' '. gulp .' 'sass npm python';
   margin: auto;
   width: 90%;
 
@@ -77,8 +77,8 @@
     grid-area: npm;
   }
 
-  #node {
-    grid-area: node;
+  #python {
+    grid-area: python;
   }
 
   @include above-tablet {
