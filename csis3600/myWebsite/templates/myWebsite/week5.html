@@ -8,77 +8,78 @@
   <div class="homework">
     <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 1. Define the following:</h3>
     <dl>
-      <dt>Demand pagin</dt>
-      <dd></dd>
+      <dt>Demand paging</dt>
+      <dd>the operating system copies a disk page into physical memory only if an attempt is made to access it and that page is not already in memory.</dd>
       <dt>Job Table</dt>
-      <dd></dd>
+      <dd>A table of Jobs</dd>
       <dt>Page map table</dt>
-      <dd></dd>
+      <dd>A page table is the data structure used by a virtual memory system in a computer operating system to store the mapping between virtual addresses and physical addresses. Virtual addresses are used by the program executed by the accessing process,
+        while physical addresses are used by the hardware, or more specifically, by the RAM subsystem.</dd>
       <dt>Memory map table</dt>
-      <dd></dd>
+      <dd>Indicates how memory is laid out.</dd>
       <dt>Virtual memory</dt>
-      <dd></dd>
+      <dd>Is a memory management technique that provides an "idealized abstraction of the storage resources that are actually available on a given machine</dd>
       <dt>Page Frame</dt>
-      <dd></dd>
+      <dd>Is a fixed-length contiguous block of virtual memory, described by a single entry in the page table. </dd>
     </dl>
     <dl>
       <dt>Program Counter</dt>
-      <dd></dd>
+      <dd>Holds the address of the next instruction to be executed, while the instruction register (IR) holds the encoded instruction. </dd>
       <dt>Page Fault</dt>
-      <dd></dd>
+      <dd>A page fault is a type of exception raised by computer hardware when a running program accesses a memory page that is not currently mapped by the memory management unit into the virtual address space of a process.</dd>
       <dt>Working set</dt>
-      <dd></dd>
+      <dd>Defines the amount of memory that a process requires in a given time interval.</dd>
       <dt>Segmentation Fault</dt>
-      <dd></dd>
+      <dd>Is a fault, or failure condition, raised by hardware with memory protection, notifying an operating system the software has attempted to access a restricted area of memory.</dd>
       <dt>Page replacement policy</dt>
-      <dd></dd>
+      <dd>Page replacement algorithms decide which memory pages to page out, sometimes called swap out, or write to disk, when a page of memory needs to be allocated.</dd>
     </dl>
   </div>
   <div class="homework">
     <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 2. Using Slitaz, examine the following config files</h3>
     <dl>
       <dt>fstab</dt>
-      <dd></dd>
+      <dd>The fstab file is read by programs that work with disk partitions and other file systems and is not automatically maintained.</dd>
       <dt>group</dt>
-      <dd></dd>
+      <dd>Lists the groups on the machine</dd>
       <dt>hosts</dt>
-      <dd></dd>
+      <dd>Contains the host database</dd>
       <dt>inittab</dt>
-      <dd></dd>
+      <dd>Describes which processes are started at bootup and during normal operation</dd>
       <dt>network.conf</dt>
-      <dd></dd>
+      <dd>Holds the networking information</dd>
     </dl>
     <dl>
       <dt>passwd</dt>
-      <dd></dd>
+      <dd>Holds the users on the machine</dd>
       <dt>profile</dt>
-      <dd></dd>
+      <dd>holds the system profile</dd>
       <dt>init.d/rcS</dt>
-      <dd></dd>
+      <dd>Allows you to run additional programs at boot time.</dd>
       <dt>X11/xorg.conf</dt>
-      <dd></dd>
+      <dd>Is a file used for configuring the X.Org Server</dd>
     </dl>
   </div>
   <div class="homework">
     <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 3. Create 8 files and set permissions to: 777, 755, 744, 644, 700, 600, 444, 555</h3>
-    <img src="" alt="">
+    <img src="{% static 'img/week5/filepermissions.png' %}" alt="File Permissions">
     <dl>
       <dt>777</dt>
-      <dd></dd>
+      <dd>Full permissions for all users</dd>
       <dt>755</dt>
-      <dd></dd>
+      <dd>Read Write Execute for user, Read Write for group and other</dd>
       <dt>744</dt>
-      <dd></dd>
+      <dd>Read Write Execute for user, Read for group and other</dd>
       <dt>644</dt>
-      <dd></dd>
+      <dd>Read Write for user, Read for group and other</dd>
       <dt>700</dt>
-      <dd></dd>
+      <dd>Read Write Execute for user, no permissions for group or other</dd>
       <dt>600</dt>
-      <dd></dd>
+      <dd>Read Write for user, no permissions for group or other</dd>
       <dt>444</dt>
-      <dd></dd>
+      <dd>Read permission for user, group, other</dd>
       <dt>555</dt>
-      <dd></dd>
+      <dd>Read Execute for user, group, other</dd>
     </dl>
   </div>
   <div class="homework">
@@ -90,6 +91,7 @@
   </div>
   <div class="homework">
     <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 6. Download XAMPP. Take a picture of the phpinfo page. then write a function called start webserver and add it to your .bashrc file. It needs to start apache and then start a browser pointer to localhost.</h3>
+    <img src="{% static 'img/week5/xammp.png' %}" alt="Php info">
   </div>
 </div>
 {% endblock %}
