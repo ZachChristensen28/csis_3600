@@ -19,7 +19,7 @@ from myWebsite import views as workViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', workViews.Week3.as_view(), name='home'),
+    path('', workViews.Week5.as_view(), name='home'),
     path('weeklywork/', include('myWebsite.urls', namespace='weeklywork')),
     path('contact/', include('contact.urls', namespace='contact')),
     path('secret/', include('secret.urls', namespace='secret')),
