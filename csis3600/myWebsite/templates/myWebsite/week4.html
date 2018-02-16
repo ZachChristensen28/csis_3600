@@ -24,8 +24,10 @@
       <dd>When fragmentation occurs, all jobs halt. unused space is allocated at the bottom of memory. All programs are then restarted. </dd>
     </dl>
   </div>
-  <h3><i class="fal fa-pencil"></i> 2. Which type of fragmentation is reduced by compaction.</h3>
-  <p>Internal Fragmentation. When memory becomes to fragmented, compaction is necessary to free up memory space.</p>
+  <div class="homework">
+    <h3><i class="fal fa-pencil"></i> 2. Which type of fragmentation is reduced by compaction.</h3>
+    <p>Internal Fragmentation. When memory becomes to fragmented, compaction is necessary to free up memory space.</p>
+  </div>
   <div class="homework">
     <h3><i class="fal fa-pencil"></i> 3. How often should relocation be performed?</h3>
     <p>Memory relocation should be performed when memory becomes too fragmented</p>
@@ -37,66 +39,67 @@
       <li>Deadlock could occur</li>
     </ol>
   </div>
-  <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 5. Precisely define the following terms</h3>
-  <dl>
-    <dt>Best fit memory allocation</dt>
-    <dd>Memory is allocated where it "best fits" in the space of memory</dd>
-    <dt>Base register</dt>
-    <dd>Stores the highest location in memory accessible to a program</dd>
-    <dt>Bounds register</dt>
-    <dd>Stores the size of the register</dd>
-    <dt>compaction</dt>
-    <dd>Collecting fragments of unused memory</dd>
-    <dt>Deallocation</dt>
-    <dd>Freeing an allocated partition</dd>
-    <dt>Dynamic partitions</dt>
-    <dd>Ability to grow in size</dd>
-    <dt>First fit memory allocation</dt>
-    <dd>Memory is allocated by the first spot it can fit in.</dd>
-    <dt>fixed partitions</dt>
-    <dd>Size of the partition remains constant</dd>
-    <dt>main memory</dt>
-    <dd>Memory that is internal to the computer (RAM)</dd>
-    <dt>relocatable dynamic partitions</dt>
-    <dd>Dynamic partitions that reallocates unused memory at the bottom when it becomes too fragmented</dd>
-    <dt>relocation register</dt>
-    <dd>Store the shift necessary to base address</dd>
-  </dl>
-</div>
-<div class="homework">
-  <h3><i class="fal fa-pencil"></i> 6. Write a DOS batch file that allows you to use the alias ls, rm, ifconfig, and a better version of the ps command</h3>
-  <img src="{% static 'img/week4/dos.png' %}" alt="DOS Script">
-</div>
-<div class="homework">
-  <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 7. Give all the new unix commands covered in class</h3>
-  <ul>
-    <li><code>ps</code>
-      <p>Shows the process list</p>
-    </li>
-    <li><code>echo</code>
-      <p>Prints out to the screen</p>
-    </li>
-    <li>
-      <code>rm</code>
-      <p>deletes files</p>
-    </li>
-  </ul>
-</div>
-<div class="homework">
-  <h3><i class="fal fa-pencil"></i> 8. nano</h3>
-  <div class="">
-    <img src="{% static 'img/week4/ps.png' %}" alt="ps">
-    <img src="{% static 'img/week4/tasklist.png' %}" alt="tasklist">
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 5. Precisely define the following terms</h3>
+    <dl>
+      <dt>Best fit memory allocation</dt>
+      <dd>Memory is allocated where it "best fits" in the space of memory</dd>
+      <dt>Base register</dt>
+      <dd>Stores the highest location in memory accessible to a program</dd>
+      <dt>Bounds register</dt>
+      <dd>Stores the size of the register</dd>
+      <dt>compaction</dt>
+      <dd>Collecting fragments of unused memory</dd>
+      <dt>Deallocation</dt>
+      <dd>Freeing an allocated partition</dd>
+      <dt>Dynamic partitions</dt>
+      <dd>Ability to grow in size</dd>
+      <dt>First fit memory allocation</dt>
+      <dd>Memory is allocated by the first spot it can fit in.</dd>
+      <dt>fixed partitions</dt>
+      <dd>Size of the partition remains constant</dd>
+      <dt>main memory</dt>
+      <dd>Memory that is internal to the computer (RAM)</dd>
+      <dt>relocatable dynamic partitions</dt>
+      <dd>Dynamic partitions that reallocates unused memory at the bottom when it becomes too fragmented</dd>
+      <dt>relocation register</dt>
+      <dd>Store the shift necessary to base address</dd>
+    </dl>
   </div>
-</div>
-<div class="homework">
-  <h3><i class="fal fa-pencil"></i> 9. show ls -l of /dev and /etc</h3>
-  <img src="{% static 'img/week4/dev.png' %}" alt="dev">
-  <p>Stores device files</p>
-  <img src="{% static 'img/week4/etc.png' %}" alt="etc">
-  <p>Stores main configuration files</p>
-  <img src="{% static 'img/week4/passwd.png' %}" alt="passwd">
-  <p>Stores user accounts</p>
-</div>
+  <div class="homework">
+    <h3><i class="fal fa-pencil"></i> 6. Write a DOS batch file that allows you to use the alias ls, rm, ifconfig, and a better version of the ps command</h3>
+    <img src="{% static 'img/week4/dos.png' %}" alt="DOS Script">
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 7. Give all the new unix commands covered in class</h3>
+    <ul>
+      <li><code>ps</code>
+        <p>Shows the process list</p>
+      </li>
+      <li><code>echo</code>
+        <p>Prints out to the screen</p>
+      </li>
+      <li>
+        <code>rm</code>
+        <p>deletes files</p>
+      </li>
+    </ul>
+  </div>
+  <div class="homework">
+    <h3><i class="fal fa-pencil"></i> 8. nano</h3>
+    <div class="">
+      <img src="{% static 'img/week4/ps.png' %}" alt="ps">
+      <img src="{% static 'img/week4/tasklist.png' %}" alt="tasklist">
+    </div>
+  </div>
+  <div class="homework">
+    <h3><i class="fal fa-pencil"></i> 9. show ls -l of /dev and /etc</h3>
+    <img src="{% static 'img/week4/dev.png' %}" alt="dev">
+    <p>Stores device files</p>
+    <img src="{% static 'img/week4/etc.png' %}" alt="etc">
+    <p>Stores main configuration files</p>
+    <img src="{% static 'img/week4/passwd.png' %}" alt="passwd">
+    <p>Stores user accounts</p>
+  </div>
 </div>
 {% endblock %}
