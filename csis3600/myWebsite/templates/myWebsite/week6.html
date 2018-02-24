@@ -1,37 +1,68 @@
 {% extends "base.html" %} {% block title %}
 <title>Week 6 | CSIS 3600 | Spring 2018</title>
-{% endblock %} {% block body %}
+{% endblock %} {% block body %} {% load static %}
 <div class="homework-container">
   <div class="title-container">
     <h2><i class="fal fa-book fa-xs"></i> Week 6</h2>
   </div>
   <div class="homework">
     <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 1. Describe in detail how the File Manager allocates a file to a single user.</h3>
-    <p></p>
+    <p>The file manager resolves the physical address of the file and passes theis to the Device Manager. The device manager turns on the sppropriate device driver and this activates reading a portion of the file into an I/O buffer. The device manager then
+      alerts the memory manger that the I/O buffer is ready to be loaded into RAM. The memory manager allocated memory for the data sitting in th eI/O buffer and communicates when it is finished to the File Manager.</p>
   </div>
   <div class="homework">
     <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 2. If you were designing the file access control system for a highly secure environment and were given the choice between establishing many access categories or only a few, which would you select and why?</h3>
+    <p>Selecting a few access categories is more secure.</p>
   </div>
   <div class="homework">
-    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 3.</h3>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 3. gzip</h3>
+    <ul>
+      <li><code>gzip awmt.txt # compresses awmt.txt</code></li>
+      <li><code>gzip -f # force overwrite of output file and compress links</code></li>
+      <li><code>gzip -r # operate recursively on directories</code></li>
+      <li><code>gzip -h # help</code></li>
+      <li><code>gzip -l # list compressed file contents</code></li>
+      <li><code>gzip -v # verbose mode</code></li>
+    </ul>
   </div>
   <div class="homework">
-    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 4.</h3>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 4. Create symbolic links</h3>
+    <ul>
+      <li><code>ln -s # creates symbolic link</code></li>
+      <li><img src="{% static 'img/week5/filepermissions.png' %}" alt="File Permissions"></li>
+    </ul>
   </div>
   <div class="homework">
-    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 5.</h3>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 5. use the dd command</h3>
+    <ul>
+      <li><code>dd if=/dev/random of=C:\</code></li>
+    </ul>
   </div>
   <div class="homework">
-    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 6.</h3>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 6. Create 8 files and set permissions to: 777, 755, 744, 644, 700, 600, 444, 555</h3>
+    <img src="{% static 'img/week5/filepermissions.png' %}" alt="File Permissions">
+    <dl>
+      <dt>777</dt>
+      <dd>Full permissions for all users</dd>
+      <dt>755</dt>
+      <dd>Read Write Execute for user, Read Write for group and other</dd>
+      <dt>744</dt>
+      <dd>Read Write Execute for user, Read for group and other</dd>
+      <dt>644</dt>
+      <dd>Read Write for user, Read for group and other</dd>
+      <dt>700</dt>
+      <dd>Read Write Execute for user, no permissions for group or other</dd>
+      <dt>600</dt>
+      <dd>Read Write for user, no permissions for group or other</dd>
+      <dt>444</dt>
+      <dd>Read permission for user, group, other</dd>
+      <dt>555</dt>
+      <dd>Read Execute for user, group, other</dd>
+    </dl>
   </div>
   <div class="homework">
-    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 7.</h3>
-  </div>
-  <div class="homework">
-    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 8.</h3>
-  </div>
-  <div class="homework">
-    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 9.</h3>
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 7. File Class</h3>
+    <img src="{% static 'img/week6/8.png' %}" alt="Java">
   </div>
 </div>
 {% endblock %}
