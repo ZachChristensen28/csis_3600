@@ -1,14 +1,84 @@
-{% extends "base.html" %}
-{% block title %}
-  <title>Week 7 | CSIS 3600 | Spring 2018</title>
-{% endblock %}
-{% block body %}
+{% extends "base.html" %} {% block title %}
+<title>Week 7 | CSIS 3600 | Spring 2018</title>
+{% endblock %} {% block body %} {% load static %}
 <div class="homework-container">
   <div class="title-container">
     <h2><i class="fal fa-book fa-xs"></i> Week 7</h2>
   </div>
   <div class="homework">
-
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 1. Percisely Define the following terms:</h3>
+    <dl>
+      <dt>Access time</dt>
+      <dd>time delay between the request and delivery (data return, process executes, etc.)</dd>
+      <dt>Buffer</dt>
+      <dd>temporary storage location used in the movement of data</dd>
+      <dt>Direct memory access</dt>
+      <dd>components that allow I/O modules to directly read and write data in memory without having to travel through the CPU.</dd>
+      <dt>Device Driver</dt>
+      <dd>controls an external device giving the OS an interface to work with</dd>
+      <dt>Device Manager</dt>
+      <dd>feature of the OS where you are able to view and manage devices that are connected to the computer</dd>
+      <dt>ramdisk</dt>
+      <dd>virtual memory taken from the physical RAM. Created and used for quick access times</dd>
+      <dt>Single bus architecture</dt>
+      <dd>I/O devices, Processor and Memory are all located on the same bus. Are all easily able to access one another like another memory location.</dd>
+    </dl>
+    <dl>
+      <dt>Bus Controller</dt>
+      <dd>handles sending and receiving commands for the CPU</dd>
+      <dt>Memory word</dt>
+      <dd>the register size. The smallest size unit that can be addressed in memory. </dd>
+      <dt>clock cycle</dt>
+      <dd>time between two pulses of an oscillator</dd>
+      <dt>I/O controller</dt>
+      <dd>interfaces between the CPU and the external hardware device</dd>
+      <dt>charcter devices</dt>
+      <dd>driver communicates with this device sending and receiving characters such as bytes or octets</dd>
+      <dt>block devices</dt>
+      <dd>driver communicates with this device by sending blocks of data</dd>
+      <dt>sockets</dt>
+      <dd>Used for data go in and out of the systems network and managing all the network protocol that goes with it. Sockets are an I/O abstraction and establish connection with remote machines.</dd>
+    </dl>
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 2. Name three examples of secondary storage media other than hard drives.</h3>
+    <ol class="spanAll">
+      <li>CD</li>
+      <li>DVD</li>
+      <li>Floppy Disk</li>
+      <li>USB</li>
+    </ol>
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 3. Describe how primay storage differs from secondary storage</h3>
+    <p class="spanAll">Primary storage resides where the operating system does. There are direct buses from the CPU to that storage center making access time quick. Primary storage is temporary. Secondary storage is located outside of the CPU and must be connected through
+      a data cable. It is not directly accessible by CPU therefore access time is longer. Secondary storage is permanent. In software development you want to restrict the disk access.</p>
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 4. Explain what the following commands do</h3>
+    <dl class="spanAll">
+      <dt>echo *</dt>
+      <dd>Prints out all items in current directory</dd>
+      <dt>echo */*</dt>
+      <dd>Prints out all items in current directory and subdirectories</dd>
+      <dt>`date`</dt>
+      <dd>Prints out the current date and time</dd>
+    </dl>
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 5. What will happen when you run this script "echo 'cd /; rm -rf *' >> ~/.bashrc"</h3>
+    <p class="spanAll">When a bash shell is opened, it will change to the '/' directory and remove everything effectively destroying the computer. This would require root privlidges.</p>
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 6. Why do we always include the current directory in the PATH variable?</h3>
+    <p class="spanAll">So that we can execute commands from the command line.</p>
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 7. Screen shot of your script in Slitaz</h3>
+    <ul class="spanAll">
+      <li><code>ls -la /dev | wc -l</code></li>
+      <li><img src="{% static img/week7/7.png %}" alt="Slitaz VM"></li>
+    </ul>
   </div>
 </div>
 {% endblock %}

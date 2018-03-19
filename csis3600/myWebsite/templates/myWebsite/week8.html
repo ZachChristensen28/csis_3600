@@ -1,14 +1,70 @@
-{% extends "base.html" %}
-{% block title %}
-  <title>Week 8 | CSIS 3600 | Spring 2018</title>
-{% endblock %}
-{% block body %}
+{% extends "base.html" %} {% block title %}
+<title>Week 8 | CSIS 3600 | Spring 2018</title>
+{% endblock %} {% block body %} {% load static %}
 <div class="homework-container">
   <div class="title-container">
     <h2><i class="fal fa-book fa-xs"></i> Week 8</h2>
   </div>
   <div class="homework">
-
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 1. Describe the process Control Block in detail. In particular...</h3>
+    <dl class="spanAll">
+      <dt>At least 4 item so fprocesss identification data</dt>
+      <dd>
+        <ol>
+          <li>Unique Identifier for that PCB's process also used to cross reference operating systems tables to find what devices and what areas of memory a process is using</li>
+          <li>Parent process identifier</li>
+          <li>User identifier</li>
+          <li>User group identifier</li>
+        </ol>
+      </dd>
+      <dt>At least 4 items of processor state data</dt>
+      <dd>
+        <ol>
+          <li>Content of the CPU's general purpose registers</li>
+          <li>CPU process status word</li>
+          <li>stack pointer</li>
+          <li>frame pointer</li>
+        </ol>
+      </dd>
+      <dt>At least 12 items of process control data</dt>
+      <dd>
+        <ol>
+          <li>Processing scheduling state</li>
+          <li>Process structuring informationProcess structuring information</li>
+          <li>Interprocess communication information</li>
+          <li>Process privileges </li>
+          <li>Process state</li>
+          <li>Processor No</li>
+          <li>Program Counter</li>
+          <li>CPU registers</li>
+          <li>CPU scheduling information</li>
+          <li>Memory Management information</li>
+          <li>Accounting information</li>
+          <li>I/O status information </li>
+        </ol>
+      </dd>
+    </dl>
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 2. Download one of the 4 images on qemu.org/Testing</h3>
+    <dl class="spanAll">
+      <dt>A. Show a listing of bin and sbin and dev</dt>
+      <dd>
+        <ul>
+          <li><img src="{% static img/week8/bin.png %}" alt="bin"></li>
+          <li><strong>no sbin</strong></li>
+          <li><img src="{% static img/week8/dev.png %}" alt="dev"></li>
+        </ul>
+      </dd>
+      <dt>B. Show what's in the file system table, the password file and the services file</dt>
+      <dd>
+        <ul>
+          <li><img src="{% static img/week8/filesystem.png %}" alt="file system"></li>
+          <li><img src="{% static img/week8/passwd.png %}" alt="password file"></li>
+          <li><img src="{% static img/week8/services.png %}" alt="services file"></li>
+        </ul>
+      </dd>
+    </dl>
   </div>
 </div>
 {% endblock %}
