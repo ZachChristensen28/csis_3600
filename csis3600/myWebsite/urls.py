@@ -12,6 +12,8 @@ urlpatterns = [
     path('week-6/', views.Week6.as_view(), name='week6'),
     path('week-7/', views.Week7.as_view(), name='week7'),
     path('week-8/', views.Week8.as_view(), name='week8'),
+    path('week-12/', views.Week12.as_view(), name='week12'),
+    path('week-13/', views.Week13.as_view(), name='week13'),
 ]
 
 handler404 = 'csis3600.views.handler404'

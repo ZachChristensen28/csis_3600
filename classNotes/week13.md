@@ -130,3 +130,28 @@ echo -e "You entered: $input\n"
 read -p "Again" input # Prompts user
 echo "You entered $input"
 ```
+
+## Friday LAB
+
+View running tasks
+
+      tasklist
+
+Kill a process
+
+      taskkill /PID [PID]
+
+Kill a process using gawk
+
+      tasklist | gawk '/notepad/ {system("taskkill /PID $2")}'
+
+Kill process script
+```bash
+#! /bin/bash
+
+# Usage: killprocess processName
+
+pattern=$1
+
+tasklist | gawk -v pat="$pattern" '$0 ~ pat {system(sprintf("taskkill /PID %s", $2))}' # `-v` assign value to variable
+```

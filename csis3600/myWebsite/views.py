@@ -31,3 +31,9 @@ class Week7(TemplateView):
 
 class Week8(TemplateView):
     template_name = 'myWebsite/week8.html'
+
+class Week12(TemplateView):
+    template_name = 'myWebsite/week12.html'
+
+class Week13(TemplateView):
+    template_name = 'myWebsite/week13.html'

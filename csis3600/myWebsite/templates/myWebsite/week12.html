@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %}
+<title>Week 12 | CSIS 3600 | Spring 2018</title>
+{% endblock %} {% block body %} {% load static %}
+<div class="homework-container">
+  <div class="title-container">
+    <h2><i class="fal fa-book fa-xs"></i> Week 12</h2>
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 1. Archive your entire home folder (call it yourname-home.tar)</h3>
+    <img src="{% static 'img/week12/1.png' %}" alt="Tar home directory">
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 2. Archive and compress your entire home folder.</h3>
+    <img src="{% static 'img/week12/2.png' %}" alt="Tar and compress home directory">
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 3. List the contents of your archive</h3>
+    <img src="{% static 'img/week12/3.png' %}" alt="Listing contents of tar file">
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 4. Add grep highlighting to your .bashrc file</h3>
+    <img src="{% static 'img/week12/4.png' %}" alt="grep highlighting">
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 5. Look for the pattern "language" in regular expressions.txt.</h3>
+    <img src="{% static 'img/week12/5.png' %}" alt="grep language">
+    <img src="{% static 'img/week12/5b.png' %}" alt="grep language wordcount">
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 6. Write a script that does the following.</h3>
+    <ol type="A">
+      <li><img src="{% static 'img/week12/6a.png' %}" alt="/etc/hosts"></li>
+      <li><img src="{% static 'img/week12/6b.png' %}" alt="/usr/share/doc"></li>
+      <li><img src="{% static 'img/week12/6c.png' %}" alt="/etc/fstab"></li>
+      <li><img src="{% static 'img/week12/6d.png' %}" alt="/etc/passwd"></li>
+    </ol>
+  </div>
+  <div class="homework">
+    <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 7. Fix awk01 so it gives exactly the same results as wc.</h3>
+    <img src="{% static 'img/week12/7.png' %}" alt="awk01 fix">
+  </div>
+</div>
+{% endblock %}
