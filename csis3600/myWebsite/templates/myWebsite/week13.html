@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block title %}
-<title>Week 13 | CSIS 3600 | Spring 2018</title>
+  <title>Week 13 | CSIS 3600 | Spring 2018</title>
 {% endblock %} {% block body %} {% load static %}
 <div class="homework-container">
   <div class="title-container">
@@ -7,13 +7,15 @@
   </div>
   <div class="homework">
     <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 1. Using the Elements.cvs file, display fields for Names, Symbols, Atomic Number and Discoverer.</h3>
-    <p>Process:</p>
-    <ul>
-      <li><code>tr ',' ' ' < Elements.csv > elements2</code></li>
-      <li><code>tr -d '\"' < elements2 > elements3</code></li>
-      <li><code>awk '(NF != 10) {print $0}' elements3</code></li>
-    </ul>
-    <img src="{% static 'img/week13/1.png' %}" alt="Elements CSV">
+    <div>
+      <p>Process:</p>
+      <ul>
+        <li><code>tr ',' ' ' < Elements.csv > elements2</code></li>
+        <li><code>tr -d '\"' < elements2 > elements3</code></li>
+        <li><code>awk '(NF != 10) {print $0}' elements3</code></li>
+      </ul>
+      <img src="{% static 'img/week13/1.png' %}" alt="Elements CSV">
+    </div>
   </div>
   <div class="homework">
     <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 2. The shell uses esac to terminate case and fi to terminate if. Why does it use done to terminate do?</h3>
@@ -21,14 +23,18 @@
   </div>
   <div class="homework">
     <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 3. Write a script that asks the user to enter their name, address, phone number and email.</h3>
-    <img src="{% static 'img/week13/3.png' %}" alt="User Input Script">
-    <img src="{% static 'img/week13/3-2.png' %}" alt="Output">
+    <div>
+      <img src="{% static 'img/week13/3.png' %}" alt="User Input Script">
+      <img src="{% static 'img/week13/3-2.png' %}" alt="Output">
+    </div>
   </div>
   <div class="homework">
     <h3 class="no-margin-bottom"><i class="fal fa-pencil"></i> 4. Improve our text2html to allow the user to give a name to the html file then launch a browser to view it in.</h3>
-    <img src="{% static 'img/week13/4.png' %}" alt="Script">
-    <img src="{% static 'img/week13/4-1.png' %}" alt="Terminal">
-    <img src="{% static 'img/week13/4-2.png' %}" alt="Firefox output">
+    <div>
+      <img src="{% static 'img/week13/4.png' %}" alt="Script">
+      <img src="{% static 'img/week13/4-1.png' %}" alt="Terminal">
+      <img src="{% static 'img/week13/4-2.png' %}" alt="Firefox output">
+    </div>
   </div>
 </div>
 {% endblock %}
